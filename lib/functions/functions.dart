@@ -15,7 +15,8 @@ Future<void> shareOptions(XFile image) async {
 /*  Share.share(
     'dfdk84767dkf3434.jpeg\n${DateTime.now()}',
   );*/
-  await Share.shareXFiles([image]);
+  await Share.shareXFiles([image],
+      text: "dfsjfnd84374738ndfsl.jpg\n\n${DateTime.now()}");
 }
 
 deleteOption(BuildContext context) {
