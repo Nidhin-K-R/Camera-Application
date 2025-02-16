@@ -11,8 +11,11 @@ void savingInfo(BuildContext context) {
           "SAVED DCIM/Downloads/photos.9836469693jdjhf73.jpg\n\n${DateTime.now()}")));
 }
 
-shareOptions() {
-  Share.share('dfdk84767dkf3434.jpeg\n${DateTime.now()}');
+Future<void> shareOptions(XFile image) async {
+/*  Share.share(
+    'dfdk84767dkf3434.jpeg\n${DateTime.now()}',
+  );*/
+  await Share.shareXFiles([image]);
 }
 
 deleteOption(BuildContext context) {
