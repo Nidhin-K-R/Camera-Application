@@ -33,7 +33,7 @@ class _PhotoScreenState extends State<PhotoScreen> {
 
                 break;
               case 2:
-                shareOptions();
+                shareOptions(widget.pic);
 
                 break;
               case 3:
