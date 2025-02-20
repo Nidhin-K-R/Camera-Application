@@ -17,7 +17,7 @@ final List<XFile> photo = [];
 class _CameraScreenState extends State<CameraScreen> {
   late CameraController _controller;
   bool rearCamera = true;
-  bool isRecording = true;
+
   late Future futureController;
   var cm = 0;
   Future<void> _initializeCamera(CameraDescription camera) async {
